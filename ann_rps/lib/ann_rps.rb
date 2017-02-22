@@ -74,7 +74,7 @@ module AnnRps
     end
   end
 
-  def game_play
+  def self.game_play
     player = Player.new
     comp = Comp.new
     comp.greeting(player.name)
@@ -82,5 +82,4 @@ module AnnRps
     comp.choose
     Game.winner(player.choice, comp.choice)
   end
-  game_play
 end
