@@ -82,4 +82,7 @@ module AnnRps
     comp.choose
     Game.winner(player.choice, comp.choice)
   end
+
+  game_play
+
 end
